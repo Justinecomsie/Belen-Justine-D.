@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <header class="header">
+    <img src="./images/logo.jfif" alt="NU Logo" class="logo">
+
+    <div class="header-title">
+        <h1>NATIONAL UNIVERSITY</h1>
+        <p>Manila, Philippines.</p>
+    </div>
+    </header>
+
+    <nav id="navs">
+        <a href="Home.html">HOME</a>
+        <a href="Registeration.html">REGISTRATION</a>
+        <a href="Grade.html">GRADE</a>
+        <a href="Profile.html">PROFILE</a>
+    </nav>
+
+    <main>
+
+    <div class="registration-container">
+
+       
+        <section class="form-section">
+
+            <form class="registration-form" action="#" method="post">
+
+                <h2>Student Registration Form</h2>
+
+                <label for="student-name">Student Name</label>
+                <input type="text" id="student-name" name="student-name" placeholder="Enter Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+                <fieldset class="radio-group">
+                    <legend>Gender</legend>
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                    <label><input type="radio" name="gender"> Prefer not to say</label>
+                </fieldset>
+
+                <label for="course">Course</label>
+                <select id="course" name="course">
+                    <option selected disabled>Select Course</option>
+                    <option>BS Computer Engineering</option>
+                    <option>BS Computer Science</option>
+                    <option>BS Civil Engineering</option>
+                    <option>BS Electrical Engineering</option>
+                </select>
+
+                <fieldset class="checkbox-group">
+                    <legend>Skills</legend>
+                    <label><input type="checkbox"> HTML</label>
+                    <label><input type="checkbox"> CSS</label>
+                    <label><input type="checkbox"> JavaScript</label>
+                    <label><input type="checkbox"> Python</label>
+                    <label><input type="checkbox"> Java</label>
+                </fieldset>
+
+                <label for="profile">Profile Picture</label>
+                <input type="file" id="profile">
+
+                <label for="address">Address</label>
+                <textarea id="address" rows="4"></textarea>
+
+                <button type="submit" class="confirm">Confirm</button>
+                <button type="reset" class="reset">Reset</button>
+
+            </form>
+
+        </section>
+
+       
+        <section class="image-section">
+            <img src="./images/back.jfif" alt="backround image" class="background-image">
+        </section>
+
+    </div>
+
+</main>
+
+   <footer>
+        &copy; 2023 NATIONAL UNIVERSITY. All rights reserved. Credit by; Belen Justine D.
+    </footer>
+</body>
+
+</html>

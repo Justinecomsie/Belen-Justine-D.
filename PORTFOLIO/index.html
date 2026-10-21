@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <!-- Tech icons (Devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-in">
+      <div class="header-brand">
+        <button class="btn btn-outline utility-button theme-toggle" id="themeToggle" type="button" aria-label="Switch to light mode">Light mode</button>
+        <a href="#home" class="logo" id="logo"></a>
+      </div>
+      <nav id="nav" aria-label="Main"></nav>
+      <a class="btn btn-primary hire" id="hireBtn" href="#contact"></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-text">
+          <span class="tag" id="heroTag"></span>
+          <h1 id="heroTitle"></h1>
+          <p class="lead" id="heroIntro"></p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects" id="workBtn"></a>
+            <a class="btn btn-outline" id="cvBtn" href="#" download></a>
+          </div>
+          <p class="eyebrow">Technologies I work with</p>
+          <ul class="tech-row" id="heroTech"></ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="orb"></div>
+          <img id="heroPhoto" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="block">
+      <div class="wrap">
+        <div class="about-controls">
+          <span class="tag">About me</span>
+          <button class="btn btn-outline utility-button about-toggle" id="aboutToggle" type="button" aria-expanded="true" aria-controls="aboutContent">Hide About Me</button>
+        </div>
+        <div class="about-in" id="aboutContent">
+          <div>
+            <h2 id="aboutTitle"></h2>
+            <div class="prose" id="aboutText"></div>
+            <a class="btn btn-outline" id="aboutBtn" href="#contact"></a>
+          </div>
+          <ul class="stats" id="stats"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="block center">
+      <div class="wrap">
+        <span class="label">My skills</span>
+        <h2 class="underline">Technologies I Master</h2>
+        <ul class="skills" id="skillList"></ul>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="block center">
+      <div class="wrap">
+        <span class="label">Featured projects</span>
+        <h2 class="underline">Some of My Recent Work</h2>
+        <div class="track" id="projectTrack"></div>
+        <div class="dots" id="projectDots" role="tablist" aria-label="Project pages"></div>
+      </div>
+    </section>
+
+    <!-- ACTIVITY REFLECTIONS -->
+    <section id="reflections" class="block center">
+      <div class="wrap">
+        <div class="reflection-heading">
+          <div>
+            <span class="label">What I learned</span>
+            <h2 class="underline">Activity Reflections</h2>
+          </div>
+          <button class="btn btn-outline utility-button reflection-toggle" id="reflectionToggle" type="button" aria-expanded="true" aria-controls="reflectionContent">Hide Reflections</button>
+        </div>
+        <div class="reflection-list" id="reflectionContent">
+          <article class="reflection-box">
+            <h3>01 – Ralph Lauren Collection Website</h3>
+            <p>Building this multi-page website taught me how to plan a site’s structure and keep a consistent design across several pages. I learned to link pages together with navigation, organize content using semantic HTML, and style layouts with CSS so the site looks clean and professional. It also showed me how important images, spacing, and typography are in making a brand’s website feel polished.</p>
+          </article>
+          <article class="reflection-box">
+            <h3>02 – Event Handling Profile Card</h3>
+            <p>This activity introduced me to JavaScript event handling. I learned how to make a page respond to user actions such as hover, click, double click, and press and hold using event listeners like mouseover, click, dblclick, and mousedown/mouseup. I also practiced updating the status message through the DOM and using CSS transitions to make the profile photo grow on hover. It helped me understand how a webpage can feel interactive instead of static.</p>
+          </article>
+          <article class="reflection-box">
+            <h3>03 – Interactive Student Profile</h3>
+            <p>Through this project, I learned how to build a page that collects and displays information using interactive controls, dropdown menus, buttons, and tables. I practiced connecting HTML elements to JavaScript functions so that selecting a program or clicking a button changes what is shown on the page. It strengthened my skills in DOM manipulation, organizing data in tables, and designing a clear, user-friendly interface.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="block">
+      <div class="wrap contact-in">
+        <div>
+          <span class="label left">Let's work together</span>
+          <h3 class="cta-title" id="ctaTitle"></h3>
+          <p class="muted" id="ctaText"></p>
+          <a class="btn btn-primary" id="ctaBtn" href="#"></a>
+        </div>
+        <figure class="quote" id="testimonial"></figure>
+        <div>
+          <span class="label left">Follow me</span>
+          <ul class="social" id="socialList"></ul>
+          <ul class="contact-lines" id="contactLines"></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-in"><span id="footLeft"></span><span id="footRight"></span></div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<style>
+    body{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        margin-top: 45px;
+    }
+
+    .profile{
+        background-color: aliceblue;
+        margin: auto;
+        border: solid 2px navy;
+        border-radius: 25px;
+        padding: 25px
+    }
+
+    .table{
+        background-color: aliceblue;
+        margin: auto;
+        border: solid 2px navy;
+        border-radius: 25px;
+        padding: 25px
+    }
+
+    .btn1{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btn2{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btn3{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btnconfirm{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btneven{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btnodd{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btnshow{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .btnhide{
+        background-color: navy;
+        border: solid 2px beige;
+        color: aliceblue;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+</style>
+<body>
+    
+    <div class="profile">
+        <h1 class="header">Welcome, Students!</h1>
+        <p>Welcome to my interactive profile!</p>
+
+        <div id="card" align="right">
+            <img src="avatar.jpg" alt="avatar">
+        </div>
+
+        <div class="info" align="left">
+            <h2>--- Student Information ---</h2>
+            <p>Name: Elio Perlman</p>
+            <p class="message1">Course: BS Computer Science</p>
+            <p>Year & Section: 3 year college 31A</p>
+        </div>
+
+        <h4 class="message">ACTION</h4>
+        <button class="btn1">Change</button>
+        <button class="btn2">Hide Profile</button>
+        <button class="btn3">Show Profile</button>
+
+        <div id="courses" align="left">
+            <h3>Select your program</h3>
+             <select id="course">
+            <option value="Program: BS Computer Science">BS Computer Science</option>
+            <option value="Program: BS Computer Engineering">BS Computer Engineering</option>
+            <option value="Program: BS Information Technology">BS Information Technology</option>
+        </select>
+
+        <h4 class="mess">---Activated---</h4>
+        </div>
+
+    </div>
+
+    <br><br>
+    <div class="table">
+        <br><br>
+
+        <table border="2" align="center" id="table">
+            <tr>
+                <th>Code</th>
+                <th>Subject</th>
+                <th>Units</th>
+                <th>Time</th>
+                <th>Room</th>
+            </tr>
+
+            <tr>
+                <td>Algo</td>
+                <td>Algorithm</td>
+                <td>3 Hours</td>
+                <td>2:30PM</td>
+                <td>402</td>
+            </tr>
+
+            <tr>
+                <td>WebDev</td>
+                <td>Website Developer</td>
+                <td>4 Hours</td>
+                <td>8:30AM</td>
+                <td>CL4</td>
+            </tr>
+
+            <tr>
+                <td>SE1</td>
+                <td>Software Engineering1</td>
+                <td>3 Hours</td>
+                <td>4:30PM</td>
+                <td>301</td>
+            </tr>
+
+            <tr>
+                <td>DS1</td>
+                <td>Discrete Structure1</td>
+                <td>2 Hours</td>
+                <td>7:00PM</td>
+                <td>206</td>
+            </tr>
+        </table>
+
+        <br><br>
+
+        <button class="btneven">Even Color</button>
+        <button class="btnodd">Odd Color</button>
+
+        <br>
+
+        <button class="btnhide">Hide</button>
+        <button class="btnshow">Show</button>
+    </div>
+
+
+    <script src="script1.js"></script>
+</body>
+</html>
